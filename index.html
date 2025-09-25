@@ -28,6 +28,10 @@
       padding:8px 0 16px;border-bottom:1px solid #222636;
     }
     .brand{display:flex;align-items:center;gap:12px}
+    .brand img {
+      height: 50px;
+      border-radius: 8px;
+    }
     .logo{
       width:44px;height:44px;border-radius:10px;background:#fff;display:grid;place-items:center;
       color:#0b2b6b;font-weight:900;font-size:20px;box-shadow:0 6px 16px rgba(0,0,0,.25);
@@ -46,7 +50,7 @@
     ul{margin:0;padding-left:18px}
     .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#0a1225;color:#d7def0;border:1px solid #1f2540;margin-right:8px;margin-bottom:8px}
     .small{font-size:14px;color:var(--mut)}
-    footer{margin-top:22px;border-top:1px solid #222636;padding-top:16px;color:var(--mut);font-size:14px}
+    footer{margin-top:22px;border-top:1px solid #222636;padding-top:16px;color:var(--mut);font-size:14px;text-align:center}
     .ok{color:var(--ok);font-weight:700}
     .kbd{display:inline-block;border:1px solid #2a2f44;border-bottom-width:3px;border-radius:8px;padding:2px 8px;background:#0b1120}
     a{color:#8ab4ff}
@@ -57,7 +61,8 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="logo" aria-hidden="true">BG</div>
+        <!-- Aquí puedes subir tu logo como logo.png -->
+        <img src="logo.png" alt="Logo BG Servicios Industriales">
         <div>
           <div class="name">BG Servicios Industriales</div>
           <div class="tag">• Servicios • Mantenimientos</div>
@@ -69,7 +74,7 @@
     <main class="grid" role="main">
       <section class="card">
         <h1>Atención rápida para tus necesidades industriales</h1>
-        <p>Proveemos <strong>servicios</strong>, <strong>refacciones</strong> y <strong>servicios</strong> para la industria. Asesoría técnica y entrega confiable.</p>
+        <p>Proveemos <strong>servicios</strong>, <strong>refacciones</strong> y <strong>soluciones</strong> para la industria. Asesoría técnica y entrega confiable.</p>
         <div>
           <span class="pill">Venta de equipo y refacciones industriales.</span>
           <span class="pill">Reparaciones de equipo.</span>
@@ -83,16 +88,19 @@
       <aside class="card">
         <h2>Contacto</h2>
         <ul>
-          <li>Tel: <a href="tel:833 132 98 42 / 833 245 59 76 / 833 555 00 98">833 132 98 42 / 833 245 59 76 / 833 555 00 98</a></li>
-          <li>Correo: <a href="mailto:mbalderrama@bgserviciosindustriales.com.mx">
-mbalderrama@bgserviciosindustriales.com.mx</a></li>
-          <li>WhatsApp: <a href="https://wa.me/8332455976" target="_blank" rel="noopener">8332455976</a></li>
+          <li>Tel: 833 132 98 42 / 833 245 59 76 / 833 555 00 98</li>
+          <li>Correo: <a href="mailto:mbalderrama@bgserviciosindustriales.com.mx">mbalderrama@bgserviciosindustriales.com.mx</a></li>
+          <li>WhatsApp: <a href="https://wa.me/8332455976" target="_blank" rel="noopener">833 245 59 76</a></li>
           <li>Ubicación: Tampico, Tamps.</li>
         </ul>
       </aside>
+    </main>
 
-  </footer>
+    <footer>
+      © <span id="y"></span> BG Servicios Industriales — Página estática en GitHub Pages
+    </footer>
   </div>
+
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
